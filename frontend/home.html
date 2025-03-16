@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="" class="form-mensagem" >
+            <h1>Kelly Dias</h1>
+            <input type="text" class="nome" placeholder="Nome completo" required>
+            <input type="text" class="celular" placeholder="Celular" required>
+            <input type="datetime-local" class="data" id="data" required>
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper" id="servicocontainer" >
+                        <div class="card-item swiper-slide" >
+                            <p class="servicos">Design de sobrancelha</p>
+                            <p class="duracao">Tempo: 1h</p>
+                            <p class="valor">R$ 50</p>
+                            <button class="button-agendar" id="Desing de sobrancelha">Agendar</button>
+
+                        </div>
+
+                        <div class="card-item swiper-slide" >
+                            <p class="servicos">Micropigmentação</p>
+                            <p class="duracao">Tempo: 1h</p>
+                            <p class="valor">R$ 100</p>
+                            <button class="button-agendar" id="Micropigmentação">Agendar</button>
+
+                        </div>
+
+                        <div class="card-item swiper-slide" >
+                            <p class="servicos">Limpeza de pele</p>
+                            <p class="duracao">Tempo: 1h</p>
+                            <p class="valor">R$ 50</p>
+                            <button class="button-agendar" id="Limpeza de pele">Agendar</button>
+
+                        </div>
+
+                        <div class="card-item swiper-slide" >
+                            <p class="servicos">Estética labial</p>
+                            <p class="duracao">Tempo: 1h</p>
+                            <p class="valor">R$ 50</p>
+                            <button class="button-agendar" id="Estética labial">Agendar</button>
+
+                        </div>
+                    </div>
+                    <div class="mensagem">
+                        <h1>${nome.value}, voce tem um ${e} agendado para ${dataFormatada}!</h1>
+                    </div>
+                    <div class="swiperBall swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+            
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

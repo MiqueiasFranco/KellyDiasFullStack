@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #8bd3dd;
+
+}
+
+h1{
+    font-family: "Tangerine", cursive;
+    font-style: italic;
+    font-size: 50px;
+    color: #FFF;
+    font-size: 7rem;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.644);
+}
+
+form  {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    height: 80%;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.493) ;
+    background-color: #f582ae   ;
+}
+
+input {
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #594a4e;
+    font-weight: 600;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.747);
+    color: #FFF;
+    transition: .5s;
+}
+
+.card-list .card-item{
+    color: black;
+    background-color: #ffffff;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    user-select: none;
+    font-family:  "Montserrat", sans-serif;
+    padding: 10px;
+    
+}
+
+.container{
+    width: 55%;
+    height: 30%;
+    border-radius: 10px;
+
+
+}
+
+.button-agendar {
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #ff8ba7;
+    color: #FFF;
+    font-size: .8rem;
+    padding: 5px;
+}
+
+.duracao {
+    font-size: 15px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    form {
+        height: 70vh;
+        width: 90vw;
+    }
+    .slider-wrapper{
+        overflow: hidden;
+        margin: 0 90px   ;
+        height: 80%;
+        border-radius: 10px;
+    }
+    .container{
+        width: 80%;
+        height: 30%;
+        border-radius: 10px;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    form {
+        height: 80vh;
+        width: 70vw;
+    }
+    .container{
+        width: 90%;
+    }
+   
+    .slider-wrapper {
+
+        overflow: hidden;
+        margin: 0  auto ;
+        height: 100%;
+    }
+    h1{
+        
+        font-style: italic;
+        font-size: 2.5rem;
+        color: #FFF;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.658);
+    }
+    
+    .card-list .card-item {
+        
+        font-size: .8rem;
+        margin-top: -15px;
+        height:auto;
+        gap: 4px;
+    }
+    .swiperBall{
+        margin-bottom: -8px;
+    }
+    
+}
