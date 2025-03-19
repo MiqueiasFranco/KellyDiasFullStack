@@ -16,7 +16,7 @@ const dataFormatada = (data) =>{
 
 
 const fetchClients = async (data, servico) => {
-    const response = await fetch('https://https://kelly-dias-full-stack.vercel.app/clients')
+    const response = await fetch('http://localhost:3306/clients')
     const clients = await response.json()
     const dateUTC = new Date(Date.now())
     const dataUsuarioUTC = new Date(data)
@@ -36,7 +36,7 @@ const fetchClients = async (data, servico) => {
 
     else {
         const cliente = { nome: nome.value, celular: celular.value, horario: data, servico: servico }
-        await fetch('https:https://kelly-dias-full-stack.vercel.app/clients', {
+        await fetch('http://localhost:3306/clients', {
             method:'post',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(cliente),
