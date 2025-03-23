@@ -5,6 +5,7 @@ const clientMiddlewares = require('./middlewares/clientMiddlewares')
 
 
 router.get('/clients', clientController.getALL)
+router.get('/clients/:id', clientController.getForId)
 router.post('/clients', clientMiddlewares.validateFieldName, clientController.createClient)
 router.delete('/clients/:id', clientController.deleteClient)
 router.put('/clients/:id', clientMiddlewares.validateFieldService, clientMiddlewares.validateFieldName, clientController.updatedClient)
